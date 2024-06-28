@@ -4,6 +4,7 @@ import './index.css'; // Assuming you have some global styles in index.css
 import Navbar from './React components/Navbar';
 import Body from './React components/Body';
 import Sidebar from './React components/Sidebar';
+import Email from './React components/Email';
 
 const App = () => {
   return (
@@ -11,7 +12,10 @@ const App = () => {
       <Navbar />
       <div className='grid grid-cols-4'>
         <Sidebar />
-        <div className="col-span-3"><Body /></div>
+        <div className="col-span-3 bg-white">
+          <Body />
+          <Email/>
+        </div>
       </div>
     </div>
   );
