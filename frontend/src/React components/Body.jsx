@@ -9,7 +9,7 @@ import { IoPeople } from "react-icons/io5";
 
 const Body = () => {
   return (
-    <div className=' rounded-xl col-span-full p-6'>
+    <div className=' rounded-xl  p-6'>
       <div className='space-y-5'>
 
         {/* First row of icons */}

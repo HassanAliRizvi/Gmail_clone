@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
-import { FaRegEnvelope, FaReply, FaTrash, FaArchive } from "react-icons/fa"; // Example icons to display on hover
+import { FaReply, FaArchive } from "react-icons/fa"; // Example icons to display on hover
 import { MdArchive } from "react-icons/md";
 import { IoMdMailOpen } from "react-icons/io";
 
@@ -13,7 +13,7 @@ const EmailRow = () => {
 
   return (
     <div 
-      className='relative flex justify-between items-center p-4 hover:bg-gray-200 cursor-pointer' 
+      className='relative flex justify-between items-center p-4 hover:bg-gray-200 cursor-pointer rounded-2xl' 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
