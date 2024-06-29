@@ -25,10 +25,10 @@ const EmailRow = () => {
         <button className='hover:text-yellow-500'>
           <CiStar className='star-icon' />
         </button>
-        <h4>User_Name</h4>
+        <h4 className='font-bold'>User_Name</h4>
       </div>
       <div className='flex-grow'>
-        <h4 className='text-center'>Subject</h4>
+        <h4 className='text-center font-bold'>Hello this is subject line</h4>
       </div>
       <div className='flex items-center space-x-2'>
         <h4 className='justify-end'>Time</h4>
