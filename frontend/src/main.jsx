@@ -5,6 +5,8 @@ import Navbar from './React components/Navbar'
 import Body from './React components/Body';
 import Sidebar from './React components/Sidebar';
 import Email from './React components/Email'; // Assuming you have an Email component
+import Compose from './React components/Compose';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -16,6 +18,10 @@ const App = () => {
           <Body />
           <Email />
         </div>
+        <Routes>
+            <Route path="/compose" element={<Compose />} />
+            {/* Add other routes here */}
+        </Routes>
       </div>
     </div>
   );
@@ -23,7 +29,9 @@ const App = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
